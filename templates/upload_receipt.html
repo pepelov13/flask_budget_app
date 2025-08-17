@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Upload Receipt{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">📷 Upload Receipt</h1>
+<form method="POST" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="receipt" class="form-label">Choose Receipt Image</label>
+        <input type="file" class="form-control" id="receipt" name="receipt" required>
+    </div>
+    <button type="submit" class="btn btn-success">Upload & Scan</button>
+</form>
+{% endblock %}
